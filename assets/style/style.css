@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+ 
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+ 
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+ 
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+ 
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+header {
+    background-color: #222;
+    
+}
+
+.into_header {
+    padding-top: 18px;
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right__images {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.brand {
+    background-color: #F1E4E6;
+    margin-bottom: 65px;
+}
+
+.brand-wrapper {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+
+.brand-text {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    color: #222;
+    font-family: Lato;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand__text_title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.brand__text-content {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.end_text {
+    color: #F16D7F;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 96px;
+    position: relative;
+}
+
+.item_4 {
+    grid-column: span 3;
+}
+
+.image-container {
+    position: relative;
+  }
+  
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 22, 22, 0.7);
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+
+.menu-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-family: Lato;
+    line-height: normal;
+}
+
+
+
+.offer-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.for-who {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.catalog-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+
+.catalog-title-text {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.catalog-description {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.catalog-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.item-product {
+    background-color:  #F8F8F8;
+}
+
+
+.item-product-description {
+    font-family: Lato;
+    line-height: normal;
+    padding-left: 16px;
+
+}
+
+.item-product-title {
+    margin-top: 24px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.item-product-text {
+    margin-top: 16px;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 315px;
+}
+
+.item-product-price {
+    margin-top: 16px;
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.catalog-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+}
+
+.style-button {
+    border: 2px solid #F16D7F;;
+    background: none;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 39px 14px 39px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+    .center {
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+
+    .into_header {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    
+    .brand-wrapper {
+        gap: 39px;
+    }
+
+    .image-man {
+        max-width: 386px;
+    }
+
+    .brand__text_title {
+        font-size: 44px;
+    }
+
+    .brand__text-content {
+        font-size: 24px;
+    }
+
+    .menu {
+        gap: 19.9px;
+        margin-bottom: 110px;
+    }
+
+
+    .catalog-title {
+        margin-bottom: 73px;
+    }
+
+    .catalog-product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .item-product img {
+        display: grid;
+        width: 100%;
+        height: auto;
+    }
+
+    .item-product-description {
+        padding-left: 16.5px;
+    
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .icon_2, .icon_3 {
+        display: none;
+    }
+
+    .brand-wrapper {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .image-man{
+        display: none;
+    }
+
+    .brand-text {
+        margin-top: 148px;
+        margin-bottom: 149px;
+    }
+
+    .brand__text_title {
+        font-size: 38px;
+    }
+
+    .brand__text-content {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 36px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+
+    }
+
+    .menu-text {
+        top: 45%;
+    }
+
+
+    .item_4 {
+        grid-column: span 1;
+    
+    }
+
+    .item_4__text {
+        top: 30%;
+    }
+
+    .catalog {
+        max-width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+
+    .catalog-product {
+        margin-top: 64.7px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        margin-bottom: 40.6px;
+    }
+
+    .catalog-button {
+        margin-bottom: 96px;
+    }
+}
