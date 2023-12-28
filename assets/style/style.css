@@ -93,7 +93,7 @@ img {
 
 .menu__box {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     top: 75px;
     right: -200%;
